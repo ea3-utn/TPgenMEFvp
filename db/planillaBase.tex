@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Engineering Calculation Paper
+% LaTeX Template
+% Version 1.0 (20/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dmitry Volynkin (dim_voly@yahoo.com.au)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper,spanish]{article} % Use A4 paper with a 12pt font size - different paper sizes will require manual recalculation of page margins and border positions
+
+\usepackage[spanish]{babel} % Idioma
+\selectlanguage{spanish}
+\usepackage{marginnote} % Required for margin notes
+\usepackage{wallpaper} % Required to set each page to have a background
+\usepackage{lastpage} % Required to print the total number of pages
+\usepackage[left=1.3cm,right=4.6cm,top=1.8cm,bottom=4.0cm,marginparwidth=3.4cm]{geometry} % Adjust page margins
+\usepackage{amsmath} % Required for equation customization
+\usepackage{amssymb} % Required to include mathematical symbols
+\usepackage{xcolor} % Required to specify colors by name
+\usepackage{physics} % Required to specify colors by name
+\usepackage{subcaption}
+\usepackage[demo]{graphicx}
+\usepackage{enumitem}
+
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+
+\urlstyle{tt}
+
+\newcommand{\MatrizN}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\Matriz}[1]{\ensuremath{\left[{#1}\right]}}
+\newcommand{\VectorN}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\Vector}[1]{\ensuremath{\left\{{#1}\right\}}}
+\newcommand{\dvar}[1]{\ensuremath{\delta{#1}}}
+\newcommand{\vol}{\ensuremath{\text{Vol}}}
+\newcommand{\dvol}{\ensuremath{\text{dVol}}}
+\newcommand{\area}{\ensuremath{\text{Area}}}
+\newcommand{\darea}{\ensuremath{\text{dArea}}}
+
+
+
+%%\usepackage[pages=all]{background}
+% configuración
+
+%% \usepackage{pagecolor,lipsum}% http://ctan.org/pkg/{pagecolor,lipsum}
+
+\pagecolor{white!80!black}
+
+%% \lipsum
+
+
+\usepackage{fancyhdr} % Required to customize headers
+\setlength{\headheight}{80pt} % Increase the size of the header to accommodate meta-information
+\pagestyle{fancy}\fancyhf{} % Use the custom header specified below
+\renewcommand{\headrulewidth}{0pt} % Remove the default horizontal rule under the header
+
+\setlength{\parindent}{0cm} % Remove paragraph indentation
+\newcommand{\tab}{\hspace*{2em}} % Defines a new command for some horizontal space
+\newcommand{\tabH}{\vspace*{2em}} % Defines a new command for some horizontal space
+
+\newcommand\BackgroundStructure{ % Command to specify the background of each page
+\setlength{\unitlength}{1mm} % Set the unit length to millimeters
+
+\setlength\fboxsep{0mm} % Adjusts the distance between the frameboxes and the borderlines
+\setlength\fboxrule{0.5mm} % Increase the thickness of the border line
+\put(10, 10){\fcolorbox{black!30}{red!8}{\framebox(192,247){}}} % Main content box
+% \put(165, 10){\fcolorbox{black}{blue!10}{\framebox(37,247){}}} % Margin box
+\put(10, 262){\fcolorbox{black!30}{red!8}{\framebox(192, 25){}}} % Header box
+% \put(100, 262){\includegraphics[width=102mm,keepaspectratio]{./imagenes/logo}} % Logo box - maximum height/width:
+\put(111, 264){\includegraphics[width=85mm,keepaspectratio]{./imagenes/logo}} % Logo box - maximum height/width: 
+}
+
+%----------------------------------------------------------------------------------------
+%	HEADER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\fancyhead[L]{\begin{tabular}{l r} % The header is a table with 4 columns
+% \thepage/\pageref{LastPage} \\ % Project name and page count
+\textbf{ESTRUCTURAS AERON\'AUTICAS III} \\
+\textbf{Trabajo pr\'actico cuatro} \\
+\textbf{Elemento de viga-p\'ortico} \\
+\textbf{ALUMNO} \\
+\end{tabular}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\bibliographystyle{plain}
+
+\AddToShipoutPicture{\BackgroundStructure} % Set the background of each page to that specified above in the header information section
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONTENT
+%----------------------------------------------------------------------------------------
+
+\section{Requerimientos generales}
+
+\begin{enumerate}
+\item Modelar con elementos de viga-p\'ortico.  
+\item La disposici\'on de nodos y elementos.
+\item La enumeraci\'on de grados de libertad del sistema global.
+\item La comparaci\'on de la soluci\'on de forma manual con la del software de simulaci\'on.
+\item Obtener la distribuci\'on de tensiones (\textsc{con el software de simulaci\'on exclusivamente}).
+\item Conclusiones y observaciones sobre los resultados obtenidos. Comparar con la resolución por \textbf{m\'etodo matricial}.
+\item Presentar las planillas de c\'alculo utilizadas.
+\item Presentar todos los archivos del software de simulaci\'on.  
+\end{enumerate}
+
+
+\section{Objetivo}
+
+Describir elementos discretos para aplicaciones bi y tridimensionales. Continuar la introducci\'on al c\'alculo por elementos f\'initos, realizando un an\'alisis estructural en un problema aplicado.  
+

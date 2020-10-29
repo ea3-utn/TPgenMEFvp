@@ -1,0 +1,32 @@
+
+
+\section{Enunciado}
+
+El siguiente problema representa la bancada de motor de una aeronave bimotor turboh\'elice. La misma se encuentra equipada con motores Pratt & Whitney PW118 y una h\'elice Hamilton Sundstrand 14RF-9.
+
+\begin{figure*}[htb]
+\centerline{\includegraphics[scale=.3]{./imagenes/mauri2.jpg}}
+\label{fg:figure1}
+\end{figure*}
+
+\vspace*{2em}
+
+El equipo de diseño le entrega los siguientes datos calculados de acuerdo a lo especificado por la norma FAR 25 - Subpart C: Structure, para la condici\'on de crucero: \\
+
+\begin{itemize}
+\item Cargas verticales: 10915 N
+\item Tracci\'on: 13248 N
+\end{itemize}
+
+Con los datos de la estructura y de cargas, calcule los desplazamientos de todos los nodos de la bancada para la condici\'on propuesta. El material a utilizar es ca\~no de $1\ \frac{7}{8}$'' y 0.083" de espesor, SAE4130. (Ver tabla adjunta)
+
+\vspace{3em}
+
+\textbf{Nota}: Considerar que las cargas se reparten de forma equivalente en cada nodo. Expresar los resultados en el SI.
+
+\begin{figure*}[htb]
+\centerline{\includegraphics[scale=.5]{./imagenes/mauri2b.jpg}}
+\label{fg:figure1}
+\end{figure*}
+
+\end{document}

@@ -1,0 +1,63 @@
+
+\section{Enunciado} 
+
+Considerar un \textbf{CubeSat} de tipo \textit{2U} como el de la figura 1.
+
+\begin{figure*}[htb]
+\centerline{\includegraphics[scale=0.40]{./imagenes/figure2u.jpg}}
+\caption{\textbf{CubeSat} 2U}
+\label{fg:figure1}
+\end{figure*}
+
+El lanzador es el \textit{Soyuz}, considerar una inclinaci\'on del vector tracci\'on de \textbf{45 grados} como se muestra en la figura 2.
+
+\begin{figure*}[htb]
+\centerline{\includegraphics[scale=0.35]{./imagenes/soyuz2uok.jpg}}
+\caption{\textbf{Soyuz}}
+\label{fg:figure2}
+\end{figure*}
+
+Estimar el desplazamiento de la estructura cuando esta es sometida \textbf{simultaneamente} a las siguientes cargas \textbf{est\'aticas}:
+
+\begin{itemize}
+\item Carga ejercida por el \textit{P-POD} (Poly Picosatellite Orbital Deployer).
+  \item Carga inercial m\'axima. 
+\end{itemize}
+
+\begin{figure*}[htb]
+\centerline{\includegraphics[scale=0.65]{./imagenes/figure.jpg}}
+\caption{Vista de un P-POD estandar}
+\label{fg:figure3}
+\end{figure*}
+
+\subsubsection{Datos}
+
+\begin{tabular}{|l||l|l|l|}
+\hline
+Variable & Descripci\'on & Valor & Unidad\\
+\hline
+$L$ & Longitud de lado & $0.1$ & $m$ \\
+$t$ & Espesor de placa & $1.27 \times 10^ {-3}$ & $m$ \\
+$d_1$ & Ancho de \textit{placas} & $10 \times 10^ {-3}$ & $m$ \\
+$E$ & M\'odulo de Elasticidad \textit{AL-5052-H32} & $70.36 \times 10^ {9}$ & $PA$ \\
+$F_{POD}$ & Carga ejercida por el \textit{P-POD} & $17.22$ & $N$ \\
+$F_{LAUNCH}$ & Carga inercial m\'axima & $171.68$ & $N$ \\
+\hline
+\end{tabular}
+
+\vspace*{4em}
+
+\subsubsection{Consideraci\'ones para modelar}
+
+\begin{itemize}
+\item Considerar las cargas aplicadas sim\'etricas respecto al plano perpendicular del eje neutro de los elementos.
+\item Las 6 caras del CubeSat son estructuralmente id\'enticas y de AL-5052-32.
+\item \textbf{No existen tensiones perpendiculares al plano XY}. (Hip\'otesis de bidimensionalizaci\'on del problema).
+\item No existe deformaci\'on por flexi\'on sobre los elementos estructurales.
+\item El CubeSat se encuentra doblemente apoyado en el \textit{P-POD}.
+  \item Considerar que existe contacto entre el \textbf{CubeSat} y la pared lateral del \textit{P-POD} cuando la trayectoria no es vertical. 
+\item Considerar las cargas inerciales equitativamente distribuidas en toda la estructura.
+\end{itemize}
+
+
+\end{document}
